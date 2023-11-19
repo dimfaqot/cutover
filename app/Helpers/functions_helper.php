@@ -123,7 +123,7 @@ function url($req = 4)
     $url = service('uri');
     $res = $url->getPath();
 
-    $req = $req;
+    $req = $req - 1;
     $exp = explode("/", $res);
 
 
