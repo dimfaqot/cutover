@@ -14,6 +14,7 @@ class Home extends BaseController
     }
     public function index(): string
     {
+        dd(url());
         return view('home', ['judul' => 'Home']);
     }
 }
