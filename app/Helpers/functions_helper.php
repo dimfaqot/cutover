@@ -118,12 +118,29 @@ function check_role()
 }
 
 
-function url($req = 4)
+// function url($req = 3)
+// {
+//     $url = service('uri');
+//     $res = $url->getPath();
+
+//     $req = $req - 1;
+//     $exp = explode("/", $res);
+
+
+//     if (array_key_exists($req, $exp)) {
+//         return $exp[$req];
+//     }
+
+//     return '';
+// }
+function url($req = null)
 {
     $url = service('uri');
     $res = $url->getPath();
 
-    $req = $req - 1;
+    if ($req == null) {
+        $req = 4;
+    }
     $exp = explode("/", $res);
 
 
