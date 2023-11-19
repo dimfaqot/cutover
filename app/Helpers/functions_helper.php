@@ -118,12 +118,12 @@ function check_role()
 }
 
 
-function url($req = 3)
+function url($req = 4)
 {
     $url = service('uri');
     $res = $url->getPath();
 
-    $req = $req - 1;
+    $req = $req;
     $exp = explode("/", $res);
 
 
