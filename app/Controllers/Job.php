@@ -92,14 +92,6 @@ class Job extends BaseController
         }
 
 
-
-        $exist = $db->whereNotIn('id', [$id])->where('paket', $paket)->get()->getRowArray();
-
-        if ($exist) {
-            gagal($url, 'Data already exist!.');
-        }
-
-
         $q['tgl'] = $tgl;
         $q['nama'] = $nama;
         $q['lokasi'] = $lokasi;
