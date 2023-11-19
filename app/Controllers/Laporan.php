@@ -98,7 +98,7 @@ class Laporan extends BaseController
             $q['no'] = $no;
             $mpdf = new \Mpdf\Mpdf($set);
             $logo = '<img width="80px" src="' .  'logo.png" alt="Logo Djana"/>';
-            $html = view('cetak_invoice', ['judul' => $judul, 'data' => $q, 'logo' => $logo, 'jwt' => $jwt, 'cols' => $cols]);
+            $html = view('cetak_invoice', ['judul' => $judul, 'data' => $q, 'logo' => $logo, 'jwt' => $jwt]);
             $mpdf->AddPage();
             $mpdf->WriteHTML($html);
 
