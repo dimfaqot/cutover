@@ -32,7 +32,7 @@ class Login extends BaseController
             'role' => $q['role']
         ];
 
-
+        dd($data);
 
         session()->set($data);
         sukses(base_url('home'), 'Login sukses.');
