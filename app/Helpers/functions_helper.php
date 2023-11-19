@@ -137,7 +137,7 @@ function url($req = null)
 {
     $url = service('uri');
     $res = $url->getPath();
-
+    dd($res);
     if ($req == null) {
         $req = 4;
     } else {
