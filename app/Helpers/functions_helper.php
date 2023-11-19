@@ -140,6 +140,8 @@ function url($req = null)
 
     if ($req == null) {
         $req = 4;
+    } else {
+        $req = $req + 1;
     }
     $exp = explode("/", $res);
 
