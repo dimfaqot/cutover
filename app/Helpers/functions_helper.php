@@ -133,16 +133,18 @@ function check_role()
 
 //     return '';
 // }
-function url($req = 4)
+function url($req = null)
 {
     $url = service('uri');
     $res = $url->getPath();
 
 
-    $req = $req - 1;
+    if ($req == null) {
+        $req = 3;
+    }
 
     $exp = explode("/", $res);
-    dd($exp);
+
 
     if (array_key_exists($req, $exp)) {
         return $exp[$req];
