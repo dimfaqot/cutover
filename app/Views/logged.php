@@ -109,7 +109,7 @@
             <div class="container bg-light py-2 shadow shadow-sm">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <a class="navbar-brand" href="<?= base_url(); ?>"><img src="logo.png" alt="LOGO" width="30"></a>
+                        <a class="navbar-brand" href="<?= base_url(); ?>"><img src="<?= base_url(); ?>logo.png" alt="LOGO" width="30"></a>
                     </div>
                     <div class="d-flex justify-content-center gap-1">
                         <div class="pt-1">
